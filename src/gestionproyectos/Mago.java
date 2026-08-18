@@ -23,4 +23,14 @@ public class Mago extends Tarea {
         nivelMana += cantidad;
         System.out.println("El mago " + getNombre() + " recarga " + cantidad + " puntos de mana. Mana actual: " + nivelMana);
     }
+
+	    // Método 3: mostrarEstado()
+    public void mostrarEstado() {
+        System.out.println("=== ESTADO DEL MAGO ===");
+        System.out.println("Nombre: " + getNombre());
+        System.out.println("Hechizo: " + hechizo);
+        System.out.println("Mana: " + nivelMana);
+        System.out.println("Estado de tarea: " + getEstado());
+        System.out.println("========================");
+    }
 }
